@@ -11,10 +11,12 @@ function Box(props) {
 
     return (
       <div onClick={() => click()}>
-        <p>Box {props.id}</p>
-        <p>Contador Hijo {count}</p>
-        <p>Diferencia con mi hermano: {count - props.brotherCount}</p>
-        
+        <div class="text">
+          <p id="box">Box {props.id}</p>
+          <p id="contador">Contador Hijo {count}</p>
+          <p id="Diferencia" >Diferencia con mi hermano: {count - props.brotherCount}</p>
+          <p></p>
+        </div>
       </div>
     );
 
